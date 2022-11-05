@@ -38,10 +38,9 @@ st.header('Where are the most people injured in NYC?')
 injured_people = st.slider('Number of persons injured in vehicle collisions',0, 19)
 st.map(data.query('injured_persons >= @injured_people')[['latitude', 'longitude']].dropna(how='any'))
 
-
-#Hour analysis slider
+#Hour analysis dropdown
 st.header('How many collisions occur during a given time of day?')
-hour = st.slider('Hour to look at', 0, 23)
+hour = st.selectbox('Hour to look at', range(0, 24), 1)
 data = data[data['date/time'].dt.hour == hour]
 st.markdown('Vehicle collisions between %i:00 and %i:00' % (hour, (hour + 1) % 24))
 
