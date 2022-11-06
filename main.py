@@ -6,7 +6,7 @@ import pydeck as pdk
 import plotly.express as px
 
 #Assign data path to variable
-DATA_URL = ("\Users\Jacob\OneDrive\Documents\Python\TrafficStreamlit\Traffic-Dashboard\Motor_Vehicle_Collisions_-_Crashes.csv")
+DATA_URL = ("/Users/Jacob/OneDrive/Documents/Python/TrafficStreamlit/Motor_Vehicle_Collisions_-_Crashes.csv")
 
 
 #Page title and description
